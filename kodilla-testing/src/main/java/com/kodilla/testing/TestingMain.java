@@ -7,13 +7,12 @@ public class TestingMain {
         if (addAToB == 14) {
             System.out.println("Add Test ok!");}
         else {
-            System.out.println("Add Test failed!");
-        }
+            System.out.println("Add Test failed!");}
+
         int subtractBFromA = calculator1.subtractBFromA(8,12);
         if (subtractBFromA == 4) {
             System.out.println("Subtract Test ok!");}
         else {
-            System.out.println("Subtract Test failed!");
-        }
+            System.out.println("Subtract Test failed!");}
     }
 }

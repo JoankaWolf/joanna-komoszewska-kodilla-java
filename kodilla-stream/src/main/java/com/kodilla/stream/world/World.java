@@ -14,7 +14,7 @@ public final class World {
         BigDecimal peopleQuantityAllWorld = continentsInWorldList.stream()
                 .flatMap(continent -> continent.getContinentListOfCountries().stream())
                 .map(Country::getPeopleQuantity)
-                .reduce(BigDecimal.ZERO, (sum,country) -> sum.add(country));
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
         return peopleQuantityAllWorld;
     }
 }

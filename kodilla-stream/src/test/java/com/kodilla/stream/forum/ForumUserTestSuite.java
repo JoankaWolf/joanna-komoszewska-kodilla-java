@@ -52,6 +52,7 @@ public class ForumUserTestSuite {
         assertFalse(user1.getLocationsOfFriends().contains("Orlando"));
 
     }
+
     @Test
     void testGetLocationsOfFriendsOfFriends() {
         //Given

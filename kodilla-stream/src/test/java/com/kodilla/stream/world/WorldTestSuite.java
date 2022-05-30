@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 
 public class WorldTestSuite {
     @Test
-    void testGetPeopleQuantity(){
+    void testGetPeopleQuantity() {
         //Given
         Continent Africa = new Continent("Africa");
         Africa.addCountry(new Country("Egypt", new BigDecimal(97000100)));
@@ -24,7 +24,7 @@ public class WorldTestSuite {
         Continent NorthAmerica = new Continent("North America");
         NorthAmerica.addCountry(new Country("USA", new BigDecimal(308000500)));
         NorthAmerica.addCountry(new Country("Canada", new BigDecimal(33000500)));
-        NorthAmerica.addCountry(new Country("Mexico",new BigDecimal(107000500)));
+        NorthAmerica.addCountry(new Country("Mexico", new BigDecimal(107000500)));
         NorthAmerica.addCountry(new Country("Guatemala", new BigDecimal(15000500)));
 
         //When

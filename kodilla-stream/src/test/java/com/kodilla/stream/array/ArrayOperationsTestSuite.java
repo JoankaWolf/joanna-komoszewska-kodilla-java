@@ -21,9 +21,9 @@ public class ArrayOperationsTestSuite {
     void testGetAverageIfNull() {
         //Given
         int [] numbers = new int[0];
-        double expectedAverage = 0;
+        double expectedAverage = 0.0;
         //When
-        double average = ArrayOperations.getAverage(numbers);
+        double average = ArrayOperations.getAverage(null);
 
         //Then
         assertEquals(expectedAverage, average);

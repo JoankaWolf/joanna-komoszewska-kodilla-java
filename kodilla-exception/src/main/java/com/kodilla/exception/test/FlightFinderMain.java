@@ -10,6 +10,7 @@ public class FlightFinderMain {
         Flight flight2 = new Flight("Warsaw", "London");
         Flight flight3 = new Flight("New York", "Glasgow");
         Flight flight4 = new Flight("Berlin", "Pisa");
+        Flight flight5 = new Flight("Krakow", "Amsterdam");
 
         Map<String, Boolean> flightSearch = findFlight.getFlightSearch();
         flightSearch.put(flight1.getArrivalsAirport(), true);
@@ -21,9 +22,12 @@ public class FlightFinderMain {
             findFlight.findFlight(flight1);
             findFlight.findFlight(flight3);
             findFlight.findFlight(flight2);
+            findFlight.findFlight(flight5);
+
 
         } catch (RouteNotFoundException e) {
-            throw new RuntimeException(e);
+         //   throw new RuntimeException(e);
+            System.out.println("There is now Airport");
         }
     }
 }
